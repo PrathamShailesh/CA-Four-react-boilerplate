@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+body{
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+     background-color: #90ECE6;
+     text-align: center;
+}
+
+
+.bll{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_dark{
+    position: relative;
+    left: 13vw;
+    background-color:#66bdda;
+    border-radius: 10px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+
+.home_page{
+    background-color: #176B87;
+    height: 35vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 14px 14px 14px;
+}
+
+
+.home_page h1{
+    font-size: 50px;
+
+    color: #49FC9B;
+}
+
+
+.home_page button{
+    width: 100px;
+    border-radius: 10px;
+    height: 5vh;
+    background-color:#64CCC5;
+    border: none;
+    transition: background-color ,color  0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 10px 14px;
+}
+
+
+.home_page button:hover{
+    background-color: #2ddb7b;
+    color: white;
+    cursor: pointer;
+}
+
+
+.result{
+    background-color: #176B87;
+    height: 40vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 14px 14px 14px;
+    line-height: 20px;
+}
+
+
+.result h1{
+    font-size: 45px;
+    color: #49FC9B;
+}
+
+
+.result p{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #2ddb7b;
+}
+
+
+.result button{
+    width: 100px;
+    border-radius: 10px;
+    height: 5vh;
+    background-color:#64CCC5;
+    border: none;
+    transition: background-color ,color  0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 10px 14px;
+}
+
+
+.result button:hover{
+    background-color: #2ddb7b;
+    color: white;
+    cursor: pointer;
+}
+
+
+.result_dark{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.darkmode {
+    background-color: #535656;
+    color: #fff;
+}
+
+
+.darkbtn{
+      cursor: pointer;
+    background-color:#4ebee3;
+    width: 100px;
+    padding: 2px;
+    border-radius: 10px;
+    
+  }
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(4, 54, 74, 1);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 30px;
+}
+
+
+.dark{
+    position: absolute;
+    right: 20px;
+    background-color: #176B87;
+    border-radius:  10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.questions{
+    display: flex;
+    justify-content: center;
+    padding: 5em;
+}
+
+
+.main_content{
+    background-color: #176B87;
+    box-shadow: rgba(0, 0, 0, 0.35) 14px 14px 14px;
+    width: 60vw;
+    border-radius: 20px ;
+    padding: 20px;
+}
+
+
+.quest{
+    color: #49FC9B;
+}
+
+
+.options{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px 10px;
+    color: #005E2B;
+    font-size: 20px;
+}
+
+
+.options div{
+    background-color: #64CCC5;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px ;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 6px 10.1px;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer; 
+}
+
+
+.options div:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 25px 25px 10.1px;
+}
+
+
+hr{
+    width: 90%;
+}
+
+
+.end{
+    display: flex;
+    justify-content: end;
+}
+
+
+.highlight{
+    background-color: #64CCC5;
+    border-radius: 10px;
+    padding: 6px;
+    margin-right:3em ;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 20px;
+    cursor: pointer;
+}
+
+
+.red{
+    color:red;
+}
+
+
+@media screen and (max-width: 600px) {
+    .home_page{
+        height: 50vh;
+        width: 50vw;
+    }
+
+
+    .options{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        line-height: 1px;
+    }
+
+
+    .end{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .highlight{
+        margin:5px ;
+        box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 20px;
+        cursor: pointer;
+    }
+
+
+    .result{
+        line-height: normal;
+        height: 60vh;
+        width: 60vw;
+    }
+
+    .home_dark{
+        position: relative;
+        left: 8vw;
+    }
+    
+  }
